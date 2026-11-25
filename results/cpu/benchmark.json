@@ -1,0 +1,132 @@
+{
+  "environment": {
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.2",
+    "warp_version": "1.19.0",
+    "numpy_version": "2.4.4",
+    "detected_cuda_devices": []
+  },
+  "measurements": [
+    {
+      "device": "cpu",
+      "device_name": "arm",
+      "particles": 1024,
+      "integrator": "explicit",
+      "steps": 100,
+      "dt_s": 0.01,
+      "repeats": 5,
+      "warmup_steps": 5,
+      "median_ms": 0.7255831733345985,
+      "particle_steps_per_s": 141127859.3043927,
+      "speedup_vs_cpu": 1.0,
+      "samples_ms": [
+        0.7409998215734959,
+        0.7255831733345985,
+        0.7258327677845955,
+        0.7190830074250698,
+        0.7081250660121441
+      ]
+    },
+    {
+      "device": "cpu",
+      "device_name": "arm",
+      "particles": 1024,
+      "integrator": "semi-implicit",
+      "steps": 100,
+      "dt_s": 0.01,
+      "repeats": 5,
+      "warmup_steps": 5,
+      "median_ms": 0.7096249610185623,
+      "particle_steps_per_s": 144301575.65627322,
+      "speedup_vs_cpu": 1.0,
+      "samples_ms": [
+        0.7096249610185623,
+        0.7104170508682728,
+        0.7046670652925968,
+        0.7042498327791691,
+        0.7374999113380909
+      ]
+    },
+    {
+      "device": "cpu",
+      "device_name": "arm",
+      "particles": 32768,
+      "integrator": "explicit",
+      "steps": 100,
+      "dt_s": 0.01,
+      "repeats": 5,
+      "warmup_steps": 5,
+      "median_ms": 4.863583017140627,
+      "particle_steps_per_s": 673741969.3365241,
+      "speedup_vs_cpu": 1.0,
+      "samples_ms": [
+        4.863583017140627,
+        4.924542270600796,
+        4.8455409705638885,
+        4.851874895393848,
+        4.939000122249126
+      ]
+    },
+    {
+      "device": "cpu",
+      "device_name": "arm",
+      "particles": 32768,
+      "integrator": "semi-implicit",
+      "steps": 100,
+      "dt_s": 0.01,
+      "repeats": 5,
+      "warmup_steps": 5,
+      "median_ms": 4.886666312813759,
+      "particle_steps_per_s": 670559393.7133815,
+      "speedup_vs_cpu": 1.0,
+      "samples_ms": [
+        4.819917026907206,
+        4.926166031509638,
+        4.886666312813759,
+        4.87174978479743,
+        4.902541637420654
+      ]
+    },
+    {
+      "device": "cpu",
+      "device_name": "arm",
+      "particles": 262144,
+      "integrator": "explicit",
+      "steps": 100,
+      "dt_s": 0.01,
+      "repeats": 5,
+      "warmup_steps": 5,
+      "median_ms": 35.005500074476004,
+      "particle_steps_per_s": 748865176.7358705,
+      "speedup_vs_cpu": 1.0,
+      "samples_ms": [
+        35.005500074476004,
+        34.86120793968439,
+        35.10370897129178,
+        35.15712497755885,
+        34.85425002872944
+      ]
+    },
+    {
+      "device": "cpu",
+      "device_name": "arm",
+      "particles": 262144,
+      "integrator": "semi-implicit",
+      "steps": 100,
+      "dt_s": 0.01,
+      "repeats": 5,
+      "warmup_steps": 5,
+      "median_ms": 35.58233333751559,
+      "particle_steps_per_s": 736725153.7818999,
+      "speedup_vs_cpu": 1.0,
+      "samples_ms": [
+        35.58233333751559,
+        36.149957682937384,
+        36.149832885712385,
+        35.14470811933279,
+        35.03970801830292
+      ]
+    }
+  ]
+}

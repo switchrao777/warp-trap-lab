@@ -1,0 +1,61 @@
+{
+  "device": "cpu",
+  "dt_s": 0.025,
+  "omega_rad_s": 2.0,
+  "steps": 800,
+  "exact_max_abs_relative_energy_drift": 3.3306690738754696e-16,
+  "explicit_final_energy_ratio": 7.37064155955338,
+  "explicit_max_relative_error_vs_discrete_law": 1.2584578674701419e-06,
+  "semi_implicit_max_abs_relative_energy_drift": 0.02419131003728392,
+  "semi_implicit_relative_energy_bound": 0.05128205128205129,
+  "modified_max_abs_relative_energy_drift": 1.7617832285266033e-06,
+  "convergence": {
+    "explicit": {
+      "dt_s": [
+        0.05,
+        0.025,
+        0.0125,
+        0.00625
+      ],
+      "final_state_errors": [
+        0.5724040460426563,
+        0.2584593194920863,
+        0.12285118878488388,
+        0.05989863581815888
+      ],
+      "observed_order": 1.0363167668342468
+    },
+    "semi-implicit": {
+      "dt_s": [
+        0.05,
+        0.025,
+        0.0125,
+        0.00625
+      ],
+      "final_state_errors": [
+        0.06143765364147175,
+        0.029799476510752435,
+        0.014673191578348893,
+        0.007280090344734232
+      ],
+      "observed_order": 1.011154447708283
+    }
+  },
+  "sweep_steps": 64,
+  "checks": {
+    "exact_energy_constant": true,
+    "explicit_matches_discrete_energy_law": true,
+    "semi_implicit_energy_within_analytic_bound": true,
+    "semi_implicit_modified_energy_constant": true,
+    "both_integrators_first_order": true,
+    "sweep_brackets_semi_implicit_boundary": true
+  },
+  "environment": {
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_version": "3.14.2",
+    "warp_version": "1.19.0",
+    "numpy_version": "2.4.4",
+    "detected_cuda_devices": []
+  }
+}

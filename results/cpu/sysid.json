@@ -1,0 +1,29 @@
+{
+  "device": "cpu",
+  "particles": 4096,
+  "steps": 150,
+  "dt_s": 0.02,
+  "noise_std": 0.01,
+  "iterations": 300,
+  "initial_loss": 0.3443111181259155,
+  "final_loss": 0.0002987832704093307,
+  "omega_median_rel_error": 0.00043941612692537086,
+  "omega_p95_rel_error": 0.0017359019986421687,
+  "zeta_median_rel_error": 0.0031505302201441598,
+  "zeta_p95_rel_error": 0.017155522958732794,
+  "max_gradcheck_rel_error": 0.008785980504587156,
+  "environment": {
+    "platform": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python_version": "3.13.18",
+    "warp_version": "1.19.0",
+    "numpy_version": "2.5.3",
+    "detected_cuda_devices": []
+  },
+  "checks": {
+    "gradients_match_finite_differences": true,
+    "loss_reaches_noise_floor": true,
+    "omega_recovered": true,
+    "zeta_recovered": true
+  }
+}
